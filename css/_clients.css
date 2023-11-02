@@ -1,0 +1,127 @@
+.clients {
+  padding-bottom: 400px;
+  background-image: url("../img/png-jpg/clients_bg-bottom.png");
+  background-position: bottom;
+  background-repeat: repeat-x;
+}
+
+.clients__container {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.clients__title {
+  text-align: center;
+  margin-bottom: 13px;
+  font-family: "Yeseva One", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 138.6%;
+  color: var(--text-3);
+}
+
+.clients__border {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.clients__descr {
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 163.68%;
+  color: #363636;
+}
+
+.clients__cards {
+  display: flex;
+  column-gap: 50px;
+}
+
+.client__card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.client__info {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  margin-bottom: 15px;
+}
+
+.client__info--settings {
+  padding-top: 24px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  background-color: #fff;
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.03);
+}
+
+.client__foto {
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+.client__names {
+  color: #181818;
+  font-family: "Yeseva One";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 127.05%;
+}
+
+.client__coments {
+  margin-bottom: 70px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 180%;
+  color: #959595;
+}
+
+.card__info {
+  margin-top: -40px;
+  margin-left: -15px;
+}
+
+@media screen and (max-width: 1024px) {
+  .clients__container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .clients__container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .clients__descr {
+    margin-bottom: 30px;
+  }
+
+  .client__info {
+    flex-direction: column;
+  }
+
+  .client__photo {
+    margin-bottom: 10px;
+  }
+
+  .client__names {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 375px) {
+  .clients-section {
+    display: none;
+  }
+}

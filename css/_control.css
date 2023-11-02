@@ -1,0 +1,250 @@
+.control__container {
+  margin-top: -340px;
+  margin-bottom: 148px;
+}
+
+.control__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.control__title {
+  margin-bottom: 12px;
+  text-align: center;
+  font-family: "Yeseva One", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 138.6%;
+  text-transform: uppercase;
+}
+
+.control__border {
+  text-align: center;
+  margin-bottom: 31px;
+}
+
+.control__video {
+  margin-bottom: 62px;
+}
+
+.control__descr {
+  width: 53%;
+  margin-bottom: 91px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 204.6%;
+  color: #363636;
+}
+
+.control__form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 38px;
+  column-gap: 52px;
+  padding: 0 17%;
+}
+
+.control__form--settings {
+  display: flex;
+  flex-direction: column;
+  width: 231px;
+}
+
+.control__form--settings > span {
+  color: rgba(54, 54, 54, 0.5);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 163.68%;
+}
+
+.control__input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #363636;
+  color: #363636;
+}
+
+.control__input:focus-visible {
+  outline: 1px solid black;
+}
+.control__input::placeholder {
+  color: #363636;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 163.68%;
+}
+
+.form__btn {
+  width: 200px;
+  height: 51px;
+  text-align: center;
+  font-style: normal;
+  font-size: 13px;
+  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -ms-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+}
+
+.control__checkbox {
+  grid-column: 1 / 4;
+  position: relative;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.control__input--checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  top: 0;
+  left: 0;
+}
+
+.fake {
+  width: 18px;
+  height: 18px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: #e3b873;
+  color: #fff;
+}
+
+.fake::before {
+  content: "\2714";
+  opacity: 0;
+  transition: 0.2s;
+}
+.control__input--checkbox:checked + .fake::before {
+  opacity: 1;
+}
+
+.checkbox__span {
+  color: #181818;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 163.68%;
+}
+
+@media screen and (max-width: 1224px) {
+  .control__form {
+    padding: 0 14%;
+  }
+}
+@media screen and (max-width: 1167px) {
+  .control__descr {
+    width: 62%;
+  }
+
+  .control__form {
+    padding: 0 10%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .control__container {
+    min-width: 768px;
+    padding: 0 18px;
+  }
+
+  .control__form {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: normal;
+    padding: 0 7%;
+  }
+
+  .form__btn {
+    grid-row: 2;
+    grid-column: 1 / 2;
+  }
+
+  .control__checkbox {
+    grid-row: 2;
+    grid-column: 2 / 3;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .control__container {
+    min-width: 375px;
+    margin-top: -800px;
+    margin-bottom: 60px;
+  }
+
+  .control__wrapper {
+    align-items: stretch;
+  }
+
+  .control__title {
+    font-size: 22px;
+  }
+
+  .control__descr {
+    width: 100%;
+    margin-bottom: 60px;
+    color: #fff;
+    font-size: 11px;
+  }
+
+  .control__video {
+    margin-bottom: 25px;
+  }
+
+  .control__form {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .control__border {
+    text-align: center;
+  }
+
+  .label__name {
+    grid-column: 1 / 2;
+    width: 100%;
+  }
+
+  .label__phone {
+    grid-column: 1 / 2;
+    grid-row: 2;
+    width: 100%;
+  }
+
+  .control__checkbox {
+    grid-row: 3;
+    grid-column: 1 / 2;
+    margin: 0;
+  }
+
+  .form__btn {
+    grid-row: 4;
+    grid-column: 1 / 2;
+    width: 100%;
+  }
+
+  .control__form--settings > span {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Nunito Sans;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 163.68%;
+  }
+
+  .control__input {
+    background-color: transparent;
+    border-color: #fff;
+  }
+
+  .control__input::placeholder {
+    color: #fff;
+  }
+
+  .checkbox__span {
+    color: #fff;
+  }
+}

@@ -1,0 +1,25 @@
+.footer {
+  background-color: var(--base);
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  padding-right: 42px;
+  padding-left: 42px;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer__container {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .footer {
+    display: none;
+  }
+}

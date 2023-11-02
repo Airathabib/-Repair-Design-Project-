@@ -1,0 +1,167 @@
+.questions__container {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.questions__form--wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+
+.questions__form--block {
+  max-width: 883px;
+  height: 445px;
+  margin-top: -240px;
+  padding: 35px 181px;
+  background: var(--base);
+}
+
+.questions__title {
+  text-align: center;
+  margin-bottom: 45px;
+  font-family: "Yeseva One", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 138.6%;
+  text-transform: uppercase;
+}
+
+.questions__form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.questions__form--settings {
+  display: flex;
+  flex-direction: column;
+}
+
+.questions__form--settings > span {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 163.68%;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.questions__input {
+  color: var(--text);
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  background-color: transparent;
+}
+
+.questions__input:focus-visible {
+  outline: 1px solid #fff;
+}
+
+.questions__input::placeholder {
+  color: #fff;
+  font-family: "Nunito Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 163.68%;
+}
+
+.questions__label--name {
+  min-width: 231px;
+  margin-bottom: 58px;
+  margin-right: 58px;
+}
+
+.questions__label--phone {
+  margin-bottom: 58px;
+  min-width: 231px;
+}
+
+.text__input {
+  margin-bottom: 48px;
+  overflow: hidden;
+  resize: none;
+  outline: 0;
+  height: 27px;
+  width: 517px;
+}
+
+.questions__checkbox {
+  margin-left: 120px;
+  margin-bottom: 50px;
+}
+
+.questions__btn {
+  align-items: center;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .questions__container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .questions__container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .questions__form--block {
+    padding: 35px;
+  }
+
+  .questions__label--name,
+  .questions__label--phone {
+    width: 45%;
+  }
+
+  .questions__label--text {
+    width: 100%;
+  }
+
+  .text__input {
+    width: 100%;
+  }
+
+  .questions__checkbox {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .questions__container {
+    padding-left: 18px;
+    padding: 0;
+  }
+
+  .questions__form--block {
+    margin-top: -160px;
+    height: 100%;
+    padding: 0 18px;
+    padding-top: 175px;
+  }
+
+  .questions__form--settings {
+    width: 100%;
+  }
+
+  .questions__input {
+    border-bottom: 1px solid #fff;
+    width: 100%;
+  }
+
+  .questions__label--name {
+    margin-right: 0;
+  }
+
+  .text__input {
+    margin-bottom: 21px;
+  }
+
+  .questions__checkbox {
+    margin-bottom: 63px;
+  }
+}
