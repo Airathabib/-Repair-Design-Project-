@@ -1,4 +1,7 @@
 .projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--base);
   padding-top: 107px;
   padding-bottom: 420px;
@@ -16,7 +19,7 @@
   margin-bottom: 45px;
 }
 
-.projects__item > span {
+.projects__link {
   font-size: 14px;
   font-weight: 400;
   line-height: 138.6%;
@@ -30,7 +33,12 @@
   -o-transition: color 0.3s ease;
 }
 
-.projects__item > span:hover {
+.projects__link:hover {
+  color: var(--text-2);
+  text-decoration: underline;
+}
+
+.projects__link--active {
   color: var(--text-2);
   text-decoration: underline;
 }
@@ -48,8 +56,7 @@
 }
 
 .info__subtitle {
-  width: 18%;
-  margin-bottom: 34px;
+  text-align: left;
   font-size: 27px;
   font-weight: 400;
   font-family: "Yeseva One", serif;
@@ -71,6 +78,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: flex-start;
+  display: none;
 }
 
 .info__item {
@@ -79,8 +87,14 @@
   align-items: start;
   row-gap: 9px;
 }
+.title-block {
+  display: flex;
+  align-items: end;
+  margin-bottom: 34px;
+}
 
 .info__subtitle--h3 {
+  display: inline-block;
   font-family: "Yeseva One", serif;
   font-size: 18px;
   font-style: normal;
@@ -102,38 +116,60 @@
   margin-top: auto;
 }
 
-.projects__img {
+.pagination-block {
+  display: inline;
+}
+
+.slider-container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-grow: 30px;
+}
+.slider {
   width: 679px;
   height: 482px;
-  background: url("../img/png-jpg/projects__img.jpg");
+  overflow: hidden;
 }
 
-.project__block {
-  display: none;
-  width: auto;
-  height: 240px;
-  padding: 0 14px;
-  margin-bottom: 36px;
-  background: url("../img/png-jpg/project-img__375.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.project-svg {
-  fill: var(--btn);
-}
-
-.project-svg:hover {
-  fill: var(--hover);
-}
-
-.project__pagination {
+.slider-image {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  display: none;
+}
+
+.block {
+  display: block;
+}
+.grid {
+  display: grid;
+}
+.info__pagination {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  column-gap: 25px;
+}
+.pagination-block {
+  display: flex;
+  column-gap: 25px;
+}
+.pagination-circle {
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.active {
+  background: #fff;
 }
 
 @media screen and (max-width: 1224px) {
