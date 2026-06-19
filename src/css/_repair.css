@@ -11,7 +11,7 @@
 .repair__title {
   margin-bottom: 13px;
   text-align: center;
-  font-family: "Yeseva One", serif;
+  font-family: 'Yeseva One', serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 138.6%;
@@ -37,7 +37,7 @@
 
 .article__title {
   margin-bottom: 13px;
-  font-family: "Yeseva One", serif;
+  font-family: 'Yeseva One', serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -71,7 +71,7 @@
   margin-top: -25px;
   align-self: start;
   box-shadow: 5px 5px 10px 0px rgba(227, 184, 115, 0.3);
-  font-family: "Yeseva One", serif;
+  font-family: 'Yeseva One', serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -93,12 +93,12 @@
 
 .repair-background {
   position: absolute;
-  content: "";
+  content: '';
   bottom: 153px;
   left: 0;
   width: 33%;
   height: 46%;
-  background-image: url("../img/svg/background-repair_svg.svg");
+  background-image: url('../img/svg/background-repair_svg.svg');
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
@@ -130,7 +130,7 @@
 
 .repair__item::before {
   counter-increment: section;
-  content: "0" counter(section);
+  content: '0' counter(section);
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -138,7 +138,7 @@
   width: 50px;
   height: 50px;
   color: #fff;
-  font-family: "Yeseva One", serif;
+  font-family: 'Yeseva One', serif;
   border-radius: 30px;
   border: 8px solid #fff;
   background: #e3b873;
@@ -165,7 +165,7 @@
   margin: 0 auto;
   margin-bottom: 39px;
   text-align: center;
-  font-family: "Nunito Sans";
+  font-family: 'Nunito Sans';
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -199,6 +199,10 @@
   background-color: transparent;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
+.repair__input:focus-visible {
+  outline: 1px solid black;
+  outline-offset: 5px;
+}
 
 .repair__input:focus-visible {
   outline: 1px solid #fff;
@@ -206,7 +210,7 @@
 
 .repair__input::placeholder {
   color: #fff;
-  font-family: "Nunito Sans";
+  font-family: 'Nunito Sans';
   font-size: 14px;
   font-style: normal;
   font-weight: 400;

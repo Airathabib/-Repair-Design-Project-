@@ -1,3 +1,5 @@
+import './css/style.css'
+
 const formBtn = document.querySelector('.form__btn');
 formBtn.addEventListener('click', (e) => {
   e.preventDefault()
@@ -96,6 +98,6 @@ if (left != null)
 if (right != null)
     right.addEventListener("click", nextSlide);
 setInterval(nextSlide, 5000);
-//# sourceMappingURL=index.js.map
+
 
 
